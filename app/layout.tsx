@@ -1,6 +1,7 @@
 import "./globals.css";
 import RefreshRedirect from "@/components/RefreshRedirect";
 import { ReactNode } from "react";
+import ChatBot from "@/components/ChatBot";
 
 export const metadata = {
   title: "BLAKBOX",
@@ -17,6 +18,7 @@ export default function RootLayout({
   <body>
     <RefreshRedirect />
     {children}
+    <ChatBot />
   </body>
 </html>
   );
