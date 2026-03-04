@@ -2,11 +2,15 @@ import OpenAI from "openai";
 import { NextResponse } from "next/server";
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY!,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 export async function POST(req: Request) {
   try {
+    if (!process.env.OPENAI_API_KEY) {
+      throw new Error("OPENAI_API_KEY no está definida");
+    }
+
     const { messages } = await req.json();
 
     const completion = await openai.chat.completions.create({
@@ -17,9 +21,13 @@ export async function POST(req: Request) {
     return NextResponse.json({
       reply: completion.choices[0].message,
     });
-  } catch (error) {
+  } catch (error: any) {
+    console.error("ERROR OPENAI:", error);
+
     return NextResponse.json(
-      { error: "Error generating response" },
+      {
+        error: error.message || "Error desconocido",
+      },
       { status: 500 }
     );
   }
