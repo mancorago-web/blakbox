@@ -1,4 +1,5 @@
 import "./globals.css";
+import RefreshRedirect from "@/components/RefreshRedirect";
 import { ReactNode } from "react";
 
 export const metadata = {
@@ -13,9 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="bg-black text-white">
-        {children}
-      </body>
-    </html>
+  <body>
+    <RefreshRedirect />
+    {children}
+  </body>
+</html>
   );
 }
