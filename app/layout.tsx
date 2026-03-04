@@ -1,21 +1,26 @@
-import "./globals.css";
-import { ReactNode } from "react";
+"use client";
 
-export const metadata = {
-  title: "BLAKBOX",
-  description: "Portal de aprendizaje y servicios en Blockchain e Inteligencia Artificial.",
-};
+import "./globals.css";
+import { useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (pathname !== "/") {
+      router.replace("/");
+    }
+  }, [pathname, router]);
+
   return (
     <html lang="es">
-      <body className="bg-black text-white">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
