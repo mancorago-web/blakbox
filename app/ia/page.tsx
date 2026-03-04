@@ -26,6 +26,7 @@ export default function IA() {
             "Automatización con Agentes IA",
             "Páginas Web IA",
             "Integración IA a Proyectos",
+            "Creación de Web Apps IA",
           ]}
         />
 
