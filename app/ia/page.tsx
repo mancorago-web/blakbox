@@ -21,9 +21,11 @@ export default function IA() {
           title="Servicios"
           color="text-purple-500"
           items={[
-            "Edición Digital IA (Fotos, Video, Audio)",
-            "Creación de Contenido Publicitario IA",
+            "Edición Digital IA (Audio Visual)",
+            "Creación de Contenido IA",
             "Automatización con Agentes IA",
+            "Páginas Web IA",
+            "Integración IA a Proyectos",
           ]}
         />
 
