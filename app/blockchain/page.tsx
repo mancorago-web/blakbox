@@ -9,7 +9,6 @@ export default function Blockchain() {
 
         <CategorySection
           title="Academia"
-          color="text-cyan-400"
           items={[
             "Clases Gratuitas",
             "Clases de Pago",
@@ -19,7 +18,6 @@ export default function Blockchain() {
 
         <CategorySection
           title="Servicios"
-          color="text-cyan-400"
           items={[
             "Intercambio de Divisas",
             "Transferencias Internacionales",
@@ -33,7 +31,6 @@ export default function Blockchain() {
 
         <CategorySection
           title="Consultoría"
-          color="text-cyan-400"
           items={[
             "Asesoría Estratégica Blockchain",
             "Optimización de Portafolio Cripto",

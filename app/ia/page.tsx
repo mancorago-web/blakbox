@@ -10,7 +10,7 @@ export default function IA() {
 
         <CategorySection
           title="Academia"
-          color="text-purple-500"
+          color="purple"
           items={[
             "Clases Gratuitas",
             "Clases de Pago",

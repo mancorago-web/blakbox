@@ -1,4 +1,14 @@
-export default function CategorySection({ title, items, color = "cyan" }) {
+interface CategorySectionProps {
+  title: string;
+  items: string[];
+  color?: "cyan" | "purple";
+}
+
+export default function CategorySection({
+  title,
+  items,
+  color = "cyan",
+}: CategorySectionProps) {
 
   const glow =
     color === "purple"
