@@ -10,7 +10,7 @@ export default function IA() {
 
         <CategorySection
           title="Academia"
-          color="purple"
+          color="text-purple-400"
           items={[
             "Clases Gratuitas",
             "Clases de Pago",
@@ -20,7 +20,7 @@ export default function IA() {
 
         <CategorySection
           title="Servicios"
-          color="purple"
+          color="text-purple-400"
           items={[
             "Edición Digital IA (Audio Visual)",
             "Creación de Contenido IA",
@@ -33,7 +33,7 @@ export default function IA() {
 
         <CategorySection
           title="Consultoría"
-          color="purple"
+          color="text-purple-400"
           items={[
             "Optimización de Procesos con IA",
             "Integración de IA en Negocios",
