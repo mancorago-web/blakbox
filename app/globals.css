@@ -48,3 +48,30 @@ body {
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out;
 }
+
+.glow-text {
+  color: #00eaff;
+  text-shadow:
+    0 0 5px #00eaff,
+    0 0 10px #00eaff,
+    0 0 20px #00eaff,
+    0 0 40px rgba(0,234,255,0.7);
+}
+
+.tech-background {
+  background: radial-gradient(circle at center, #0a0f2c 0%, #000000 70%);
+}
+
+.tech-button {
+  background: linear-gradient(135deg, #00c6ff, #7a00ff);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tech-button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 200, 255, 0.4);
+}
