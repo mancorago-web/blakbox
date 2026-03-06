@@ -14,7 +14,7 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className="dark">
   <body>
     <RefreshRedirect />
     {children}
