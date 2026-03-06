@@ -20,7 +20,7 @@ export default function IA() {
 
         <CategorySection
           title="Servicios"
-          color="text-purple-500"
+          color="purple"
           items={[
             "Edición Digital IA (Audio Visual)",
             "Creación de Contenido IA",
@@ -33,7 +33,7 @@ export default function IA() {
 
         <CategorySection
           title="Consultoría"
-          color="text-purple-500"
+          color="purple"
           items={[
             "Optimización de Procesos con IA",
             "Integración de IA en Negocios",
