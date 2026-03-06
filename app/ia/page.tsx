@@ -6,8 +6,7 @@ export default function IA() {
     <>
       <Navbar />
       <div className="p-10 grid md:grid-cols-3 gap-8 items-start">
-        <div className="tech-background min-h-screen flex flex-col items-center justify-center"></div>
-
+        
         <CategorySection
           title="Academia"
           color="text-purple-400"
