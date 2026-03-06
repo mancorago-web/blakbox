@@ -35,13 +35,13 @@ export default function CategorySection({
 
       <ul className="space-y-2">
         {items.map((item, index) => (
-          <li
-            key={index}
-            className="text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer"
-          >
-            {item}
-          </li>
-        ))}
+  <li
+    key={index}
+    className={`text-gray-300 cursor-pointer hover:${color} transition-colors duration-300`}
+  >
+    {item}
+  </li>
+))}
       </ul>
     </div>
   );
